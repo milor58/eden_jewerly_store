@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

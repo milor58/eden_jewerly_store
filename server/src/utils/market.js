@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Free third-party API, no account and no API key (works from Lebanon):
 //   gold-api.com  -> live gold (XAU) and silver (XAG) price in USD per troy ounce
 //   xaus.com      -> backup if gold-api.com is down

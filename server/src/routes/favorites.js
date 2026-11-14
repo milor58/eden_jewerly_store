@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { Router } from 'express';
 import User from '../models/User.js';
 import Product from '../models/Product.js';

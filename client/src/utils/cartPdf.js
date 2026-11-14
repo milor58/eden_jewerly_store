@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Builds a PDF of the cart (items, sizes, quantities, prices, total) in the browser
 // and downloads it. Uses pdf-lib (free, open source, no server, no API key).
 // pdf-lib is loaded only when the button is clicked, so the site stays fast.

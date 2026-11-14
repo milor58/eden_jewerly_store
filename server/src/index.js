@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import 'dotenv/config';
 import { checkEnv } from './config/env.js';
 import { connectDB } from './config/db.js';

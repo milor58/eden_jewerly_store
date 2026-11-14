@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import MediaGallery from '../components/MediaGallery.jsx';

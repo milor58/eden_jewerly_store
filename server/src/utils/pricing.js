@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { HttpError } from './httpError.js';
 
 // Builds the order lines from the DATABASE prices, never from prices sent by

@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import multer from 'multer';
 
 export function notFound(req, res) {

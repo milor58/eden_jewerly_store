@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 export const formatPrice = (n) =>
   new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(n || 0);
 

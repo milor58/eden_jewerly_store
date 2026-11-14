@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useState } from 'react';
 import { useApi } from '../../hooks/useApi.js';
 import { api, apiFetch } from '../../api/client.js';

@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import RingPlaceholder from './RingPlaceholder.jsx';

@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useState } from 'react';
 import ProductForm from './ProductForm.jsx';
 import RingPlaceholder from '../../components/RingPlaceholder.jsx';

@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema(

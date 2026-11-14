@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Smooth scroll with Lenis, synced with GSAP ScrollTrigger.
 import Lenis from 'lenis';
 import { gsap } from 'gsap';

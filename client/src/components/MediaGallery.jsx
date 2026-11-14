@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useState } from 'react';
 import RingPlaceholder from './RingPlaceholder.jsx';
 import { sized } from '../utils/image.js';

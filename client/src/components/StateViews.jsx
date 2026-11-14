@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Small shared views for the loading / error / empty states.
 
 export function Loader({ label = 'Loading' }) {

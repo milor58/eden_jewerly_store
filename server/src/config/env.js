@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Fail fast: crash at startup if a required secret is missing (Session 21).
 const REQUIRED = ['MONGODB_URI', 'JWT_SECRET'];
 

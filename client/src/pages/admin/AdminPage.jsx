@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useState } from 'react';
 import AdminProducts from './AdminProducts.jsx';
 import AdminOrders from './AdminOrders.jsx';

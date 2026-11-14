@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Workshop WhatsApp number, international format, digits only (e.g. 96170123456).
 // Set VITE_WHATSAPP_NUMBER in client/.env.development (local) and in Vercel (online).
 // Default: the workshop number (+961 71 99 33 78). VITE_WHATSAPP_NUMBER can override it.

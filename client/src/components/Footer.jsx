@@ -17,7 +17,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="container footer-bottom">
-        <p>© {new Date().getFullYear()} Eden Jewelry · Capstone project by Hussein Ezzeddine (ID 232773)</p>
+        <p>© {new Date().getFullYear()} Eden Jewelry. All rights reserved. Handmade in south Lebanon.</p>
       </div>
     </footer>
   );

@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // ImageKit can resize a photo from its URL: add ?tr=w-600 and it sends a
 // smaller, compressed version (webp when the browser supports it).
 // Other links (like /rings/R01/1.jpg) are returned unchanged.

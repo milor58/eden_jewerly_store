@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // ImageKit (free plan) stores the ring photos. We call its upload REST API
 // directly with fetch, so no SDK is needed. Only the PRIVATE key is required,
 // and it stays on the server (never in the React app).

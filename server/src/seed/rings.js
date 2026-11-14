@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // The workshop pieces (19 products) with their photos.
 //
 // PHOTOS: in client/public/products/<folder>/ (served by the website itself).

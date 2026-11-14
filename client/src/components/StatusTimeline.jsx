@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { STATUS_STEPS, capitalize, formatDate } from '../utils/format.js';
 
 // requested -> confirmed -> shipped -> delivered (or cancelled)

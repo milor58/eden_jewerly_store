@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import mongoose from 'mongoose';
 
 export const ORDER_STATUSES = ['requested', 'confirmed', 'shipped', 'delivered', 'cancelled'];

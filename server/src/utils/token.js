@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import jwt from 'jsonwebtoken';
 
 export function signToken(user) {

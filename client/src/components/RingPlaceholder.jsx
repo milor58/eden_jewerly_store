@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useId } from 'react';
 
 // Drawn ring shown until real photos are added. The gem takes the stone's colour.

@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { Router } from 'express';
 import multer from 'multer';
 import { imagekitEnabled, uploadToImageKit } from '../config/imagekit.js';

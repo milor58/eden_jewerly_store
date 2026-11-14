@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // One place for every request to the API (Session 20).
 // - base URL from VITE_API_URL
 // - adds the token automatically

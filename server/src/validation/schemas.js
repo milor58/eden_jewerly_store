@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { z } from 'zod';
 import { ORDER_STATUSES } from '../models/Order.js';
 

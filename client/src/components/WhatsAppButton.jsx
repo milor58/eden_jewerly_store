@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { WHATSAPP_NUMBER, whatsappLink } from '../config.js';
 
 // Round button fixed at the bottom right of every page. Opens a chat with the workshop.

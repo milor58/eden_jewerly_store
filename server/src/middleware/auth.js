@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import User from '../models/User.js';
 import { verifyToken } from '../utils/token.js';
 

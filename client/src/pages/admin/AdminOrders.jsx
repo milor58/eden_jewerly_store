@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useState } from 'react';
 import { Loader, ErrorBox, Empty } from '../../components/StateViews.jsx';
 import { useApi } from '../../hooks/useApi.js';

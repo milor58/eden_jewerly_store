@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import mongoose from 'mongoose';
 
 // validate(schema)          -> checks req.body, replaces it with the clean data

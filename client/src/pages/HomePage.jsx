@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { Link } from 'react-router-dom';
 import ForgeHero from '../components/forge/ForgeHero.jsx';
 import ProductCard from '../components/ProductCard.jsx';

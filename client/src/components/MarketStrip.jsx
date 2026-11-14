@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { useApi } from '../hooks/useApi.js';
 
 const usd = (n) =>

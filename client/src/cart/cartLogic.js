@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Pure cart functions (no React), so they are easy to test.
 export const MAX_QTY = 10;
 

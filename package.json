@@ -2,6 +2,8 @@
   "name": "eden-jewelry-store",
   "version": "1.0.0",
   "private": true,
+  "author": "Eden Jewelry",
+  "license": "UNLICENSED",
   "description": "Eden Jewelry: full-stack capstone (React + Express + MongoDB)",
   "scripts": {
     "postinstall": "npm install --prefix server && npm install --prefix client",

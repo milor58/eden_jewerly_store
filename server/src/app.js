@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';

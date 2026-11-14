@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // The blacksmith workshop, drawn in SVG. ForgeHero.jsx animates it with GSAP.
 // Every animated part has a className that starts with its role
 // (crucible, stream, smith-arm, spark, ember, hero-ring ...).

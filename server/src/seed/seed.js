@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // npm run seed
 // - adds or updates the products in rings.js (matched by code)
 // - removes products whose code is not in rings.js

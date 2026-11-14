@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { createContext, useContext, useEffect, useMemo, useReducer } from 'react';
 import { cartReducer, cartCount, cartTotal } from './cartLogic.js';
 

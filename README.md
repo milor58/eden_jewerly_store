@@ -168,3 +168,8 @@ Note: Render's free plan sleeps after inactivity, so the first request can take 
 
 Arabic / English switch, email notification when an order status changes, custom order
 with a reference photo, and online payment.
+
+
+## Copyright
+
+© 2026 Eden Jewelry. All rights reserved. See [LICENSE](LICENSE).

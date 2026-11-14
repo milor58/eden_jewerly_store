@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import { describe, expect, test } from 'vitest';
 import { cartReducer, cartCount, cartTotal, toOrderItems } from '../cart/cartLogic.js';
 import { validateSignup } from '../pages/SignupPage.jsx';

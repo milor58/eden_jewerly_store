@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 import mongoose from 'mongoose';
 
 export const DEFAULT_RING_SIZES = [5, 6, 7, 8, 9, 10, 11, 12];

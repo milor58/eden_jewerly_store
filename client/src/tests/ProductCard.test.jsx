@@ -1,3 +1,4 @@
+/* © 2026 Eden Jewelry. All rights reserved. */
 // Front-end tests: Vitest + React Testing Library.
 import { describe, expect, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
