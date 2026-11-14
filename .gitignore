@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# secrets (commit only the .example files)
+.env
+.env.*
+!.env.example
+
+# builds and logs
+dist/
+coverage/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
