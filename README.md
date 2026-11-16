@@ -4,9 +4,6 @@ A full-stack online showroom for a small silver workshop near Tyre, south Lebano
 The workshop has no showroom and is far from the city, so customers browse every ring
 in photos and video, choose a stone and size, and send an **order request**. The owner
 manages the rings and the requests from a private dashboard.
-
-Capstone project for Vasken Sarkis's Web Development course, by **Hussein Ezzeddine (ID 232773)**.
-
 - Live site: `https://YOUR-SITE.vercel.app` (fill in after deployment)
 - Live API: `https://YOUR-API.onrender.com/api/health` (fill in after deployment)
 
