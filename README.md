@@ -5,7 +5,10 @@ The workshop has no showroom and is far from the city, so customers browse every
 in photos and video, choose a stone and size, and send an **order request**. The owner
 manages the rings and the requests from a private dashboard.
 
-Capstone project for  Web Development course, by **Hussein Ezzeddine (ID 232773) Ahmad al khatib**.
+Capstone project for Vasken Sarkis's Web Development course, by **Hussein Ezzeddine (ID 232773)**.
+
+- Live site: `https://YOUR-SITE.vercel.app` (fill in after deployment)
+- Live API: `https://YOUR-API.onrender.com/api/health` (fill in after deployment)
 
 ---
 
@@ -23,12 +26,15 @@ Capstone project for  Web Development course, by **Hussein Ezzeddine (ID 232773)
 
 **Workshop owner (admin)**
 - Add, edit, delete rings; mark sold out or featured
-- Photos **and videos** per ring: put them in `client/public/rings/R01/` and run `npm run media`, or add a link in the dashboard; the first photo is the cover
+- Ring photos uploaded from the **admin dashboard** to **ImageKit** (free); delete a photo or choose the cover; resized automatically for fast loading
 - See every order request with the customer's contact and move it through the status flow
 
 **Beyond CRUD**
 - Order-request workflow with allowed status transitions and history dates
 - Server-side pricing (the browser never decides the price)
+- Third-party APIs: **ImageKit** (photo upload and hosting) and **gold-api.com** (live gold and silver prices in USD, no key)
+- Cart → **Download as PDF** (items, sizes, quantities, prices, total) and **Send on WhatsApp**
+- Round WhatsApp chat button on every page
 - Beyond CRUD: order-request workflow with allowed status transitions and server-side pricing
 
 ---
@@ -43,7 +49,9 @@ Capstone project for  Web Development course, by **Hussein Ezzeddine (ID 232773)
 | Auth | bcrypt (12 rounds), JSON Web Tokens, `requireAuth` + `requireAdmin` middleware |
 | Validation | zod (every body and query) |
 | Security | helmet, CORS allow-list, rate limiting, body size limit, `sanitizeFilter` |
-| Media | Static files in `client/public/rings/` (no external service) |
+| Third-party API | gold-api.com (gold + silver, backup xaus.com), called from `server/src/utils/market.js`, cached 30 min |
+| PDF | pdf-lib in the browser (cart summary) |
+| Photos | ImageKit upload API, called from `server/src/config/imagekit.js` (multer, memory only, admin only, 10 MB max) |
 | Tests | Jest + Supertest (back end), Vitest + React Testing Library (front end) |
 | Deployment | Vercel (front end), Render (API), MongoDB Atlas (database) |
 
@@ -68,12 +76,11 @@ eden-jewelry-store/
    │  ├─ index.js          loads .env, checks secrets, connects DB, starts server
    │  ├─ app.js            middleware order + routes (imported by tests)
    │  ├─ models/           User, Product, Order (Mongoose)
-   │  ├─ routes/           auth, products, favorites, orders
+   │  ├─ routes/           auth, products, favorites, orders, uploads, market
    │  ├─ middleware/       requireAuth, requireAdmin, validate, errors
    │  ├─ validation/       zod schemas
    │  ├─ utils/            JWT helpers, server-side pricing
-   │  └─ seed/             20 rings + admin account, media linking script
-   ├─ media/               (git-ignored) photos/videos for `npm run media`
+   │  └─ seed/             20 rings + admin account
    └─ tests/               Jest + Supertest tests
 ```
 
@@ -127,16 +134,16 @@ The back-end tests do not need a database.
 
 ---
 
-## Adding the ring photos and videos
+## Adding the ring photos
 
-Rings show a drawn ring in their stone's colour until real photos are added. Not every
-ring needs a video. Three ways:
+1. Create a free account on **imagekit.io** → Dashboard → **Developer options** → copy the **Private key**.
+2. Put it in `server/.env` → `IMAGEKIT_PRIVATE_KEY=private_...` (and in Render for the live site). Restart `npm run dev`.
+3. Log in as admin → **Dashboard → Rings → Edit** → **Upload photos** → choose one or more photos → **Save changes**.
+   - The first photo is the cover; click *Cover* on another photo to change it, ✕ to remove it.
+   - Photos are saved on ImageKit in `eden/R01`, `eden/R02` …, and the link is stored in MongoDB.
 
-1. **Bulk (recommended)**: put files in `client/public/rings/R01/`, `R02/` … (first file = cover), then from the project root run `npm run media`. See `client/public/rings/README.md`.
-2. **Dashboard**: Dashboard → Rings → Edit → paste a path like `/rings/R01/1.jpg` (or an `https://` link) → *Add link*.
-3. **Seed file**: write the paths in `server/src/seed/rings.js` and run `npm run seed` again.
-
-The files are served by the website itself, so no outside account is needed. Commit them to GitHub so Vercel publishes them.
+Without the key the Upload button is off, but you can still paste a photo link.
+Removing a photo from a ring does not delete the file on ImageKit (delete it there if needed).
 
 ---
 
@@ -145,11 +152,11 @@ The files are served by the website itself, so no outside account is needed. Com
 1. **MongoDB Atlas** → Network Access → allow `0.0.0.0/0` (Render has changing IPs).
 2. **Render** (API) → New Web Service → this repo
    - Root directory: `server` · Build: `npm install` · Start: `npm start`
-   - Environment: `NODE_ENV=production`, `MONGODB_URI`, `JWT_SECRET` (32+ random chars), `CLIENT_ORIGIN=https://YOUR-SITE.vercel.app`
+   - Environment: `NODE_ENV=production`, `MONGODB_URI`, `JWT_SECRET` (32+ random chars), `CLIENT_ORIGIN=https://YOUR-SITE.vercel.app`, `IMAGEKIT_PRIVATE_KEY`
    - Check `https://YOUR-API.onrender.com/api/health`
 3. **Vercel** (front end) → New Project → this repo
    - Root directory: `client` · Framework: Vite
-   - Environment: `VITE_API_URL=https://YOUR-API.onrender.com` (no trailing slash), optional `VITE_WHATSAPP_NUMBER`
+   - Environment: `VITE_API_URL=https://YOUR-API.onrender.com` (no trailing slash), `VITE_WHATSAPP_NUMBER` (WhatsApp buttons)
 4. Put the Vercel URL in Render's `CLIENT_ORIGIN` (no trailing slash) and redeploy.
 5. Run the seed once against the Atlas database from your computer: `npm run seed`.
 
@@ -161,3 +168,8 @@ Note: Render's free plan sleeps after inactivity, so the first request can take 
 
 Arabic / English switch, email notification when an order status changes, custom order
 with a reference photo, and online payment.
+
+
+## Copyright
+
+© 2026 Eden Jewelry. All rights reserved. See [LICENSE](LICENSE).
